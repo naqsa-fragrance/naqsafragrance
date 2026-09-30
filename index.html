@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NAQSA FRAGRANCE — Premium Perfumes</title>
+<meta name="description" content="Discover NAQSA FRAGRANCE — premium perfumes crafted for a signature fragrance experience. Delivery available across Pakistan.">
+<meta property="og:title" content="NAQSA FRAGRANCE — Premium Perfumes">
+<meta property="og:description" content="Discover NAQSA FRAGRANCE — premium perfumes crafted for a signature fragrance experience. Delivery available across Pakistan.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Cookie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-sweep" id="preSweep"></div>
+  <div class="pre-logo">
+    <div class="line" id="preLine1"></div>
+    <div class="line" id="preLine2"></div>
+    <div class="sub">FRAGRANCE HOUSE</div>
+  </div>
+  <div class="pre-bar"></div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">NAQSA <span>FRAGRANCE</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#hero">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#notes">Notes</a>
+      <a href="#brand-intro">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions" id="navActions">
+      <button class="cart-btn" id="cartOpenBtn" aria-label="Open cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a href="#hero">Home</a>
+  <a href="#products">Shop</a>
+  <a href="#notes">Notes</a>
+  <a href="#brand-intro">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb-1" id="orb1"></div>
+    <div class="hero-orb orb-2" id="orb2"></div>
+    <div class="hero-rays"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Premium Fragrance</span>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span>NAQSA</span></span>
+        <span class="reveal-line"><span class="accent">FRAGRANCE</span></span>
+      </h1>
+      <p class="hero-tagline">"The Essence of Luxury"</p>
+      <p class="hero-desc">Four signature scents, composed for those who move quietly and leave an unmistakable impression.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-gold" data-scroll>Explore Collection</a>
+        <a href="#order" class="btn btn-outline" data-scroll>Order Now</a>
+      </div>
+      <div class="gold-rule hero-rule"></div>
+    </div>
+    <div class="hero-visual">
+      <div class="bottle-glow" id="bottleGlow"></div>
+      <div  id="bottleWrap">
+        <img src="all.png" alt="NAQSA Fragrance signature perfume bottle" loading="eager">
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY BANNER -->
+<section id="banner" aria-label="Delivery information">
+  <div class="banner-track" id="bannerTrack">
+    <span><i class="fa-solid fa-truck-fast"></i> Delivery All Over Pakistan —  PKR 0</span>
+    <span><i class="fa-solid fa-gem"></i> Premium Fragrance House</span>
+    <span><i class="fa-solid fa-truck-fast"></i> Delivery All Over Pakistan —  PKR 0</span>
+    <span><i class="fa-solid fa-gem"></i> Premium Fragrance House</span>
+    <span><i class="fa-solid fa-truck-fast"></i> Delivery All Over Pakistan —  PKR 0</span>
+    <span><i class="fa-solid fa-gem"></i> Premium Fragrance House</span>
+  </div>
+</section>
+
+<!-- BRAND INTRO -->
+<section id="brand-intro">
+  <div class="container intro-grid">
+    <div class="intro-copy">
+      <span class="eyebrow">Our Philosophy</span>
+      <h2 class="intro-heading" style="margin-top:16px;">
+        <span class="reveal-line"><span>THE ART OF</span></span>
+        <span class="reveal-line"><span>FRAGRANCE</span></span>
+      </h2>
+      <p class="intro-text">NAQSA FRAGRANCE is built around one idea: that a scent should feel considered, not accidental. Every bottle in our collection is focused on a premium fragrance experience — refined, understated, and made to be worn with intention rather than shouted from a shelf.</p>
+      <div class="gold-rule intro-rule"></div>
+    </div>
+    <div class="intro-media">
+      <div class="frame" id="introFrame">
+        <span class="corner tl"></span><span class="corner br"></span>
+        <img src="allinone.png" alt="NAQSA Fragrance editorial composition" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Shop The Collection</span>
+      <h2 class="section-heading">THE COLLECTION</h2>
+      <p>Four expressions. One signature.</p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- FRAGRANCE NOTES -->
+<section id="notes">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Composition</span>
+      <h2 class="section-heading">THE FRAGRANCE NOTES</h2>
+    </div>
+    <div class="pyramid">
+      <div class="pyr-layer top" id="layerTop">
+        <div class="layer-label">Top Notes</div>
+        <div class="layer-notes">Mint + 3</div>
+      </div>
+      <div class="pyr-connector"></div>
+      <div class="pyr-layer heart" id="layerHeart">
+        <div class="layer-label">Heart Notes</div>
+        <div class="layer-notes">Cinnamon + 2</div>
+      </div>
+      <div class="pyr-connector"></div>
+      <div class="pyr-layer base" id="layerBase">
+        <div class="layer-label">Base Notes</div>
+        <div class="layer-notes">Patchouli + 2</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STORY -->
+<section id="story">
+  <div class="story-bg"></div>
+  <div class="container story-inner">
+    <span class="eyebrow">The Experience</span>
+    <h2 class="story-title" id="storyTitle" style="margin-top:20px;">MORE THAN A <span class="gold-text">FRAGRANCE.</span></h2>
+    <p class="story-text">A NAQSA bottle sits on a shelf like a quiet statement — dark glass, gold light, and a scent that follows you into the room before you speak. This is fragrance treated as an experience, not a transaction.</p>
+  </div>
+</section>
+
+<!-- WHY NAQSA -->
+<section id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Difference</span>
+      <h2 class="section-heading">WHY NAQSA FRAGRANCE</h2>
+    </div>
+    <div class="benefit-grid" id="benefitGrid">
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fa-solid fa-gem"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Carefully presented fragrances with a luxury experience.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fa-solid fa-flask"></i></div>
+        <h3>Four Signature Scents</h3>
+        <p>A focused collection designed for different moods.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fa-solid fa-crown"></i></div>
+        <h3>Luxury Experience</h3>
+        <p>A premium visual and shopping experience.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Delivery Across Pakistan</h3>
+        <p>Nationwide delivery for PKR 0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER / QUICK SHOP -->
+<section id="order">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Quick Shop</span>
+      <h2 class="section-heading">YOUR NEXT SIGNATURE SCENT AWAITS.</h2>
+    </div>
+    <div class="order-panel">
+      <div class="order-grid" id="orderGrid"></div>
+      <div class="order-controls">
+        <div class="qty-control">
+          <button id="orderQtyMinus" aria-label="Decrease quantity">−</button>
+          <span id="orderQtyVal">1</span>
+          <button id="orderQtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn-gold" id="orderWhatsappBtn">
+          <i class="fa-brands fa-whatsapp"></i> Order On WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-heading" style="margin-top:16px;">LET'S CONNECT</h2>
+      <div class="contact-list">
+        <div class="contact-row">
+          <i class="fa-solid fa-signature"></i>
+          <div><h4>Brand</h4><p>NAQSA FRAGRANCE</p></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><h4>WhatsApp</h4><p>+92 302 1930006</p></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div><h4>Delivery</h4><p>All Over Pakistan</p></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-coins"></i>
+          <div><h4>Delivery Charges</h4><p>free</p></div>
+        </div>
+      </div>
+      <a href="https://wa.me/923021930006?text=Hello%20NAQSA%20FRAGRANCE%2C%20I%20have%20a%20question." target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:34px;">
+        <i class="fa-brands fa-whatsapp"></i> Order / Contact On WhatsApp
+      </a>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input class="field" type="text" placeholder="Full Name" id="cfName" required>
+      <input class="field" type="tel" placeholder="Phone Number" id="cfPhone" required>
+      <textarea class="field" placeholder="Your Message" id="cfMsg" required></textarea>
+      <button type="submit" class="btn btn-gold" style="justify-content:center;">
+        <i class="fa-brands fa-whatsapp"></i> Send Via WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">NAQSA FRAGRANCE</div>
+        <div class="footer-tag">"The Essence of Luxury"</div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Collection</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#brand-intro">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li>WhatsApp: +92 302 1930006</li>
+          <li>Delivery: All Over Pakistan</li>
+          <li>Charges: Free</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NAQSA FRAGRANCE. ALL RIGHTS RESERVED.</span>
+      <span>Designed with a black &amp; gold signature.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="menu-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3>Your Bag</h3>
+    <button class="cart-close" id="cartCloseBtn" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-summary" id="cartSummary" style="display:none;">
+    <div class="summary-row"><span>Subtotal</span><span id="sumSubtotal">PKR 0</span></div>
+    <div class="summary-row"><span>Delivery</span><span id="sumDelivery">PKR 0</span></div>
+    <div class="summary-row total"><span>Total</span><span id="sumTotal">PKR 0</span></div>
+    <button class="btn btn-gold" id="cartCheckoutBtn"><i class="fa-brands fa-whatsapp"></i> Checkout On WhatsApp</button>
+  </div>
+</aside>
+
+<!-- BUY NOW MODAL -->
+<div class="modal-overlay" id="buyModalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="buyModalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="buyModalTitle">Complete Your Order</h3>
+    <p class="sub">Fill in your details and we'll confirm your order on WhatsApp.</p>
+    <form class="modal-form" id="buyForm">
+      <input class="field" type="text" placeholder="Full Name" id="buyName" required>
+      <input class="field" type="tel" placeholder="Phone Number" id="buyPhone" required>
+      <input class="field" type="text" placeholder="Complete Address" id="buyAddress" required>
+      <input class="field" type="text" placeholder="City" id="buyCity" required>
+      <div class="qty-control" style="align-self:flex-start;">
+        <button type="button" id="buyQtyMinus" aria-label="Decrease quantity">−</button>
+        <span id="buyQtyVal">1</span>
+        <button type="button" id="buyQtyPlus" aria-label="Increase quantity">+</button>
+      </div>
+      <div class="modal-summary" id="modalSummary"></div>
+      <button type="submit" class="btn btn-gold" style="justify-content:center;">
+        <i class="fa-brands fa-whatsapp"></i> Confirm On WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<div id="toast" role="status"></div>
+
+<!-- ============================================================
+     LIBRARIES
+============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
